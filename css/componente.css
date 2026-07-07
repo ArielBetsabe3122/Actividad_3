@@ -1,4 +1,3 @@
-/* Contenedor fijo en la esquina superior derecha */
 #pingu-toast-container {
     position: fixed;
     top: 20px;
@@ -13,8 +12,9 @@
     width: 100%;
     background-color: white;
     padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
 }
 
 h1 {
@@ -25,15 +25,16 @@ h1 {
 
 }
 body{
+    display:flex;
+    justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F8F9FA;
     color: #2B2D42;
     line-height: 1.6;
-    padding: 40px 20px;
+    padding: 20px;
     align-items: center;
     margin: 0;
 }
-/* Estilo base del componente visual */
 .pingu-toast {
     min-width: 280px;
     padding: 15px 20px;
@@ -45,28 +46,47 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap:12px;
     animation: aparecer 0.3s ease;
 }
-
-/* Variaciones de comportamiento visual por parámetros (tipo) */
-.pingu-toast.agregarAlCarrito { background-color: #2ec4b6; }
-.pingu-toast.error { background-color: #e63946; }
-.pingu-toast.info { background-color: #927dc1; }
-
-.boton-carrito {
-    background-color: #1ea406;
-    color: white;
-    border: none;
-    padding: 12px 20px; 
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s;
-    white-space: nowrap;
-    height: 46px; 
+.pingu-toast-img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
-.boton-error {
-    background-color: #ae3e06;
+.pingu-toast-mensaje {
+    flex: 1;
+    text-align: left;
+}
+.pingu-toast.success { 
+    background-color: #05842d; 
+    color:#071010;
+} 
+.pingu-toast.error { 
+    background-color: #871d26; 
+}  
+.pingu-toast.info { 
+    background-color: #510aea; 
+}
+
+.boton-carrito { 
+    background-color: #0f73e6; 
+}
+.boton-carrito:hover{
+     background-color: #05842d;
+}
+.boton-error { 
+    background-color: #e63946; 
+}
+.boton-error:hover{
+     background-color: #05842d;
+}
+.boton-info{ 
+    background-color: #927dc1; }
+.boton-info:hover{
+     background-color: #05842d;
+}
+.boton-carrito, .boton-error, .boton-info{
     color: white;
     border: none;
     padding: 12px 20px; 
@@ -89,7 +109,6 @@ body{
      background-color: #08807c; 
     }
 
-/* Animaciones interactivas */
 @keyframes aparecer {
     from { transform: translateX(100%); opacity: 0; }
     to { transform: translateX(0); opacity: 1; }
