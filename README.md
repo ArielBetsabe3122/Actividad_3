@@ -4,15 +4,15 @@
 ## Portada
 
 **Materia:** Programación Web  
-**Alumno:** Ariel Betsabe López Guerrero 
 **Proyecto:** Desarrollo de un Componente Visual Reutilizable  
 **Nombre del componente:** PingüiToast  
-**Profesor:**Martinez Nieto Adelina  
+**Alumno:** Ariel Betsabe López Guerrero  
+**Profesor:** Martinez Nieto Adelina  
 **Fecha:** 05-07-2026
 ---
 
 ## Descripción
-**PingüiToast** es una librería que permite mostrar notificaciones emergentes (Toast Notifications) de forma rápida, sencilla y reutilizable.
+PingüiToast es una librería que permite mostrar notificaciones emergentes (Toast Notifications) de forma rápida, sencilla y reutilizable.
 ---
 
 ## Problema que resuelve
@@ -32,20 +32,20 @@ Para integrar **PingüiToast** en cualquier proyecto, solo debes clonar o descar
 
 ### 1. Vincular el archivo CSS
 Añade la hoja de estilos dentro de la etiqueta `<head>` de tu archivo HTML:
-
+```html
 <link rel="stylesheet" href="css/componente.css">
-
+```
 ### 2. Vincular el archivo JavaScript
 Añade el script justo antes del cierre de la etiqueta </body> para asegurar una carga correcta
-
+```html
 <script src="js/componente.js"></script>
-
-
+```
+---
 ### Capturas de pantalla 
  
-!(img/capturaExito.png)
+![Captura Exito](img/capturaExito.png) .
 
-!(img/capturaError.png)
+![Captura Error](img/capturaError.png) .
 
 
 
