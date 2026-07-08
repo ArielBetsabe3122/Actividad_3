@@ -3,17 +3,19 @@
 
 ## Portada
 
-**Materia:** Programación Web  
-**Proyecto:** Desarrollo de un Componente Visual Reutilizable  
-**Nombre del componente:** PingüiToast  
-**Alumno:** Ariel Betsabe López Guerrero  
-**Profesor:** Martinez Nieto Adelina  
-**Fecha:** 05-07-2026
+Materia: Programación Web  
+Proyecto: Desarrollo de un Componente Visual Reutilizable  
+Nombre del componente: PingüiToast  
+Alumno: Ariel Betsabe López Guerrero  
+Profesor: Martinez Nieto Adelina  
+Fecha: 05-07-2026
+
 ---
 
 ## Descripción
+
 PingüiToast es una librería que permite mostrar notificaciones emergentes (Toast Notifications) de forma rápida, sencilla y reutilizable.
----
+
 
 ## Problema que resuelve
 
@@ -26,7 +28,7 @@ por ejemplo:
 
 ---
 
-## Instalación
+# Instalación
 
 Para integrar **PingüiToast** en cualquier proyecto, solo debes clonar o descargar las carpetas de este repositorio e incluir los archivos en el `<head>` y al final del `<body>` de tu documento HTML de la siguiente manera:
 
